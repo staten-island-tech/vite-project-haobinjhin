@@ -1,4 +1,4 @@
-const games = [[
+export const games = [[
     {
         "name": "Dark Souls",
         "releaseDate": "2011-09-22",
@@ -183,3 +183,4 @@ const games = [[
 
   ];
   
+

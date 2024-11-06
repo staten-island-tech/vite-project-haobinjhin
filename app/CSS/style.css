@@ -3,9 +3,9 @@ html,
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background-color: red;
 }
 
 body {
   text-align: center;
-  font-size: 50px;
 }
