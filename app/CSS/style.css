@@ -1,11 +1,44 @@
 html,
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 2px;
+  padding: 2px;
   box-sizing: border-box;
   background-color: red;
 }
 
 body {
   text-align: center;
+}
+
+
+
+
+.cardbox {
+  display: flex;
+  flex: 20%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  height: auto;
+  width: 500px;
+  background-color: aqua;
+}
+
+.name{
+  background-color: aqua;
+}
+
+.price{
+  background-color: aqua;
+}
+
+.studio{
+  background-color: aqua;
 }
