@@ -31,6 +31,8 @@ function filterstudio(studio){
 
     const cards = document.querySelectorAll(".card")
 
+
+
     cards.forEach((card) => {
 
         const gamestudio = card.querySelector(".studio").getAttribute("id");
@@ -40,13 +42,18 @@ function filterstudio(studio){
         }
         
 
-    })
+    }) 
 
 }
 
 function fromsoftfilter(){
     const frombutton = DOM.fromsoftbtn
-    frombutton.addEventListener("click", () => filterstudio("FromSoftware"))
+
+    frombutton.addEventListener("click", function(){
+        filterstudio("FromSoftware")
+    })
+
+    
 }
 fromsoftfilter()
  
