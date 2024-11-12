@@ -6,12 +6,14 @@ games.forEach((game) => console.log(game.name))
 
 const DOM ={
     cardbox: document.querySelector(".cardbox"),
+    cards: document.getElementsByClassName("card"),
     fromsoftbtn: document.getElementById("FromSoftware"),
     ubisoftbtn: document.getElementById("Ubisoft"),
     rockstarbtn: document.getElementById("RockstarGames"),
     capcombtn: document.getElementById("Capcom"),
     cdprobtn: document.getElementById("CDProject"),
     teamcherbtn: document.getElementById("TeamCherry"),
+    refreshbtn: document.getElementById("refresh"),
 }
 
 
@@ -27,63 +29,45 @@ function createcard(game){
 }
 createcard(games)
 
-function filterstudio(studio){
 
-    const cards = document.querySelectorAll(".card")
+function displaycards(filteredgames){
 
+    DOM.cardbox.innerHTML = ""
 
-
-    cards.forEach((card) => {
-
-        const gamestudio = card.querySelector(".studio").getAttribute("id");
-
-        if (gamestudio != studio){
-            card.remove()
-        }
-        
-
-    }) 
-
-}
-
-function fromsoftfilter(){
-    const frombutton = DOM.fromsoftbtn
-
-    frombutton.addEventListener("click", function(){
-        filterstudio("FromSoftware")
+    filteredgames.forEach((game) =>{
+        DOM.cardbox.insertAdjacentHTML("beforeend",
+        `<div class = "card"> 
+        <h1 class = "name">${game.name}</h1>
+        <h5 class = "price">${game.price}</h5>
+        <h5 class = "studio" id = "${game.studio}">${game.studio}</h5>
+        <br>
+        </div>`
+        )
     })
 
+
+}
+
+
+function filterstudio(studio){
+    const filtergames = games.filter((game) => game.studio === studio)
+    displaycards(filtergames)
     
 }
-fromsoftfilter()
- 
-function ubisoftfilter(){
-    const ubibutton = DOM.ubisoftbtn
-    ubibutton.addEventListener("click", () => filterstudio("Ubisoft"))
-}
-ubisoftfilter()
 
-function rockstarfilter(){
-    const rockstarbutton = DOM.rockstarbtn
-    rockstarbutton.addEventListener("click", () => filterstudio("Rockstar Games"))
-}
-rockstarfilter()
- 
-function capcomfilter(){
-    const capcombutton = DOM.capcombtn
-    capcombutton.addEventListener("click", () => filterstudio("Capcom Production Studio 4"))
-}
-capcomfilter()
- 
-function cdprojectfilter(){
-    const cdprobutton = DOM.cdprobtn
-    cdprobutton.addEventListener("click", () => filterstudio("CD Projekt Red"))
-}
-cdprojectfilter()
- 
-function teamchefilter(){
-    const teamchebutton = DOM.teamcherbtn
-    teamchebutton.addEventListener("click", () => filterstudio("Team Cherry"))
-}
-teamchefilter()
+
+DOM.fromsoftbtn.addEventListener("click", () => filterstudio("FromSoftware"));
+DOM.ubisoftbtn.addEventListener("click", () => filterstudio("Ubisoft"));
+DOM.rockstarbtn.addEventListener("click", () => filterstudio("Rockstar Games"));
+DOM.capcombtn.addEventListener("click", () => filterstudio("Capcom Production Studio 4"));
+DOM.cdprobtn.addEventListener("click", () => filterstudio("CD Projekt Red"));
+DOM.teamcherbtn.addEventListener("click", () => filterstudio("Team Cherry"));
+DOM.refreshbtn.addEventListener("click", function(){
+    DOM.cardbox.innerHTML = ""
+    createcard(games)
+
+});
+
+
+
  
