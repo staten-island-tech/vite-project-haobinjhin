@@ -6,7 +6,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS3", "Xbox 360"],
         studio: "FromSoftware",
-        director: "Hidetaka Miyazaki"
+        director: "Hidetaka Miyazaki",
+        pic: "./PIC/images/DS1.png",
     },
     {
         name: "Bloodborne",
