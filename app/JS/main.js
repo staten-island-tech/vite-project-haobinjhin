@@ -37,6 +37,7 @@ function displaycards(filteredgames){
     filteredgames.forEach((game) =>{
         DOM.cardbox.insertAdjacentHTML("beforeend",
         `<div class = "card"> 
+        <h1> </h1>
         <h1 class = "name">${game.name}</h1>
         <h5 class = "price">${game.price}</h5>
         <h5 class = "studio" id = "${game.studio}">${game.studio}</h5>
