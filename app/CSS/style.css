@@ -33,6 +33,7 @@ body {
   border-radius: 100px;
   align-items: center;
   margin: 20px;
+  justify-content: center;
 }
 
 .name,
