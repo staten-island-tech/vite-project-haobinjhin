@@ -9,7 +9,7 @@ export const games = [
         platforms: ["PC", "PS3", "Xbox 360"],
         studio: "FromSoftware",
         director: "Hidetaka Miyazaki",
-        pic: "",
+        pic: "./PIC/DS1.png",
     },
     {
         name: "Bloodborne",
@@ -17,7 +17,8 @@ export const games = [
         price: 59.99,
         platforms: ["PS4"],
         studio: "FromSoftware",
-        director: "Hidetaka Miyazaki"
+        director: "Hidetaka Miyazaki",
+        pic: "./PIC/bloodborne.png",
     },
     {
         name: "Sekiro: Shadows Die Twice",
@@ -25,7 +26,8 @@ export const games = [
         price: 59.99,
         platforms: ["PC", "PS4", "Xbox One"],
         studio: "FromSoftware",
-        director: "Hidetaka Miyazaki"
+        director: "Hidetaka Miyazaki",
+        pic: "./PIC/sekiro.png",
     },
     {
         name: "Elden Ring",
@@ -33,7 +35,8 @@ export const games = [
         price: 59.99,
         platforms: ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"],
         studio: "FromSoftware",
-        director: "Hidetaka Miyazaki"
+        director: "Hidetaka Miyazaki",
+        pic: "./PIC/EldenRing.png",
     },
 
     // Ubisoft
@@ -43,7 +46,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS3", "Xbox 360"],
         studio: "Ubisoft",
-        director: "Patrice Désilets"
+        director: "Patrice Désilets",
+        pic: "./PIC/assassin2.png",
     },
     {
         name: "Far Cry 5",
@@ -51,7 +55,8 @@ export const games = [
         price: 59.99,
         platforms: ["PC", "PS4", "Xbox One"],
         studio: "Ubisoft",
-        director: "Dan Hay"
+        director: "Dan Hay",
+        pic: "./PIC/farcry5.png",
     },
     {
         name: "Watch Dogs",
@@ -59,7 +64,8 @@ export const games = [
         price: 49.99,
         platforms: ["PC", "PS4", "Xbox One"],
         studio: "Ubisoft",
-        director: "Jonathan Morin"
+        director: "Jonathan Morin",
+        pic: "./PIC/watchdog.png",
     },
     {
         name: "Assassin's Creed Odyssey",
@@ -67,7 +73,8 @@ export const games = [
         price: 59.99,
         platforms: ["PC", "PS4", "Xbox One"],
         studio: "Ubisoft",
-        director: "Scott Phillips"
+        director: "Scott Phillips",
+        pic: "./PIC/assassinody.png",
     },
     {
         name: "Splinter Cell: Blacklist",
@@ -75,7 +82,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS3", "Xbox 360"],
         studio: "Ubisoft",
-        director: "Patrick Redding"
+        director: "Patrick Redding",
+        pic: "./PIC/splinterblacklist.png",
     },
     {
         name: "Assassin's Creed Valhalla",
@@ -83,7 +91,8 @@ export const games = [
         price: 59.99,
         platforms: ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"],
         studio: "Ubisoft",
-        director: "Ashraf Ismail"
+        director: "Ashraf Ismail",
+        pic: "./PIC/assassinval.png",
     },
 
     // Rockstar Games
@@ -93,7 +102,8 @@ export const games = [
         price: 59.99,
         platforms: ["PC", "PS4", "Xbox One"],
         studio: "Rockstar Games",
-        director: "Rodney E. McCulloch"
+        director: "Rodney E. McCulloch",
+        pic: "./PIC/rdr2.png",
     },
     {
         name: "GTA V",
@@ -101,7 +111,8 @@ export const games = [
         price: 29.99,
         platforms: ["PC", "PS4", "Xbox One", "PS3", "Xbox 360"],
         studio: "Rockstar Games",
-        director: "Leslie Benzies"
+        director: "Leslie Benzies",
+        pic: "./PIC/gta5.png",
     },
     {
         name: "Max Payne 3",
@@ -109,7 +120,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS3", "Xbox 360"],
         studio: "Rockstar Games",
-        director: "Sam Houser"
+        director: "Sam Houser",
+        pic: "./PIC/maxpayne3.png",
     },
     {
         name: "L.A. Noire",
@@ -117,7 +129,8 @@ export const games = [
         price: 49.99,
         platforms: ["PC", "PS3", "Xbox 360"],
         studio: "Rockstar Games",
-        director: "Brendan McNamara"
+        director: "Brendan McNamara",
+        pic: "./PIC/lanoire.png",
     },
 
     // Capcom Production Studio 4
@@ -127,7 +140,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS2", "GameCube"],
         studio: "Capcom Production Studio 4",
-        director: "Shinji Mikami"
+        director: "Shinji Mikami",
+        pic: "./PIC/residentevil4.png",
     },
     {
         name: "Devil May Cry",
@@ -135,7 +149,8 @@ export const games = [
         price: 29.99,
         platforms: ["PS2"],
         studio: "Capcom Production Studio 4",
-        director: "Hideki Kamiya"
+        director: "Hideki Kamiya",
+        pic: "./PIC/dmc.png",
     },
     {
         name: "Resident Evil 2",
@@ -143,7 +158,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS1", "N64"],
         studio: "Capcom Production Studio 4",
-        director: "Hideki Kamiya"
+        director: "Hideki Kamiya",
+        pic: "./PIC/residentevil2.png",
     },
     {
         name: "Resident Evil 3: Nemesis",
@@ -151,7 +167,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS1", "Dreamcast"],
         studio: "Capcom Production Studio 4",
-        director: "Kazuhiro Aoyama"
+        director: "Kazuhiro Aoyama",
+        pic: "./PIC/residentevil3.png",
     },
 
     // CD Projekt Red
@@ -161,7 +178,8 @@ export const games = [
         price: 49.99,
         platforms: ["PC", "PS4", "Xbox One", "Nintendo Switch"],
         studio: "CD Projekt Red",
-        director: "Konrad Tomaszkiewicz"
+        director: "Konrad Tomaszkiewicz",
+        pic: "./PIC/thewitcher3.png",
     },
     {
         name: "Cyberpunk 2077",
@@ -169,7 +187,8 @@ export const games = [
         price: 59.99,
         platforms: ["PC", "PS4", "PS5", "Xbox One", "Xbox Series X/S"],
         studio: "CD Projekt Red",
-        director: "Adam Badowski"
+        director: "Adam Badowski",
+        pic: "./PIC/cyberpunk2077.png",
     },
 
     // Team Cherry
@@ -179,7 +198,8 @@ export const games = [
         price: 14.99,
         platforms: ["PC", "Nintendo Switch", "PS4", "Xbox One"],
         studio: "Team Cherry",
-        director: "Ari Gibson"
+        director: "Ari Gibson",
+        pic: "./PIC/hollowknight.png",
     },
 
     // Additional Games
@@ -189,7 +209,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS1"],
         studio: "Capcom Production Studio 4",
-        director: "Shinji Mikami"
+        director: "Shinji Mikami",
+        pic: "./PIC/residentevil.png",
     },
     {
         name: "Resident Evil Code: Veronica",
@@ -197,7 +218,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "Dreamcast", "PS2"],
         studio: "Capcom Production Studio 4",
-        director: "Shinji Mikami"
+        director: "Shinji Mikami",
+        pic: "./PIC/residentevilCV.png",
     },
     {
         name: "Resident Evil 5",
@@ -205,7 +227,8 @@ export const games = [
         price: 29.99,
         platforms: ["PC", "PS3", "Xbox 360"],
         studio: "Capcom Production Studio 4",
-        director: "Kenichi Ueda"
+        director: "Kenichi Ueda",
+        pic: "./PIC/residentevil5.png",
     },
     {
         name: "Assassin's Creed III",
@@ -213,7 +236,8 @@ export const games = [
         price: 39.99,
         platforms: ["PC", "PS3", "Xbox 360", "Wii U"],
         studio: "Ubisoft",
-        director: "Alex Hutchinson"
+        director: "Alex Hutchinson",
+        pic: "./PIC/assassin3.png",
     },
     {
         name: "The Witcher 2: Assassins of Kings",
@@ -221,7 +245,8 @@ export const games = [
         price: 29.99,
         platforms: ["PC", "Xbox 360"],
         studio: "CD Projekt Red",
-        director: "Adam Badowski"
+        director: "Adam Badowski",
+        pic: "./PIC/thewitcher2.png",
     }
 ];
 

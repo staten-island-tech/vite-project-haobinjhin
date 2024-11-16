@@ -23,7 +23,8 @@ function createcard(game){
         <h1 class = "name">${gamename.name}</h1>
         <h5 class = "price">${gamename.price}</h5>
         <h5 class = "studio" id = "${gamename.studio}">${gamename.studio}</h5>
-        <br>
+        <br/>
+        <img src="${gamename.pic}" alt="${gamename.name}" class = "image">
     </div>`))
     
 }
@@ -41,6 +42,8 @@ function displaycards(filteredgames){
         <h1 class = "name">${game.name}</h1>
         <h5 class = "price">${game.price}</h5>
         <h5 class = "studio" id = "${game.studio}">${game.studio}</h5>
+        <br/>
+        <img src="${game.pic}" alt="${game.name}" class = "image">
         </div>`
         )
     })
