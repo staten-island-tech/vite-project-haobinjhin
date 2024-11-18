@@ -14,6 +14,7 @@ const DOM ={
     cdprobtn: document.getElementById("CDProject"),
     teamcherbtn: document.getElementById("TeamCherry"),
     refreshbtn: document.getElementById("refresh"),
+    lightdarkbtn: document.getElementById("light/dark"),
 }
 
 
@@ -71,6 +72,16 @@ DOM.refreshbtn.addEventListener("click", function(){
 
 });
 
+
+DOM.lightdarkbtn.addEventListener("click", function(){
+    if (document.body.classList.contains("light")){
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+    } else{
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+    }
+})
 
 
  

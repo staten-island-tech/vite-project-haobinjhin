@@ -3,13 +3,56 @@ html,
   margin: 2px;
   padding: 0px;
   box-sizing: border-box;
-  background-color: rgb(56, 54, 54);
+  background-color: var(--secondary);
 }
 
 body {
   text-align: center;
 }
 
+:root{
+  --black:rgb(0, 0, 0);
+  --white:rgb(255, 255, 255);
+  --red-gray:rgb(176, 142, 142);
+  --dark-gray:rgb(92, 92, 92);
+  --light-gray:rgb(156, 156, 156);
+  --darker-gray:rgb(39, 39, 39);
+  --lighter-gray:rgb(201, 201, 201);
+  --blue-gray:rgb(118, 150, 148);
+  --dark-back:rgb(56, 54, 54);
+  --light-back:rgb(223, 223, 223);
+
+  --h1:7.594rem;
+  --h2:5.063rem;
+  --h3:3.375rem;
+  --h4:2.25rem;
+  --h5:1.5rem;
+}
+
+.dark{
+  --primary: var(--black);
+  --secondary: var(--dark-back);
+  --thirdary: var(--dark-gray);
+  --fourthdary: var(--darker-gray);
+  --fifthdary: var(--red-gray);
+  --sixdary: var(--white);
+}
+
+.light{
+  --primary:var(--white);
+  --secondary:var(--light-back);
+  --thirdary:var(--light-gray);
+  --fourthdary:var(--lighter-gray);
+  --fifthdary:var(--blue-gray);
+  --sixdary:var(--black);
+}
+
+
+
+.title{
+  color: var(--primary);
+  font-size: 70px;
+}
 
 
 
@@ -26,10 +69,10 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid var(--primary);
   height: 400px;
   width: 500px;
-  background-color: rgb(43, 41, 41);
+  background-color: var(--fourthdary);
   border-radius: 100px;
   align-items: center;
   margin: 20px;
@@ -49,21 +92,21 @@ body {
 .studio {
   width: 200px;
   justify-content: center;
-  background-color: rgb(43, 41, 41);
-  color: rgb(176, 142, 142);
+  background-color: var(--fourthdary);
+  color: var(--fifthdary);
 }
 
 
 .button {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  color: var(--sixdary);
+  background-color: var(--primary);
 }
 
 
 .card:hover {
   transition: 0.2s;
   transform: scale(1.1);
-  background-color: rgb(92, 92, 92);
+  background-color: var(--thirdary);
 }
 
 .card:hover .name,
@@ -72,5 +115,50 @@ body {
 .card:hover .image {
   transition: 0.2s;
   transform: scale(1.1);
-  background-color: rgb(92, 92, 92);
+  background-color: var(--thirdary);
+}
+
+.button{
+  scale: 1.1;
+  margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .cardbox {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      margin: 10px;
+      flex: 40%;
+  }
+
+  .image {
+      height:200px ;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardbox {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      margin: 10px;
+      flex: 100%;
+  }
+
+  .image {
+      height: 200px;
+  }
 }
